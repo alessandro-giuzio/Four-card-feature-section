@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/four-card-feature-section-solution-sjjIA-nP6
+- Live Site URL: https://hopeful-snyder-220f69.netlify.app/
 
 ### Built with
 

@@ -1,0 +1,132 @@
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  --clr-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-light-gray: hsl(0, 0%, 98%);
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw--600: 600;
+
+  --pad-left: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--clr-grayish-blue);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+.fw-200 {
+  font-weight: var(--fw-200);
+}
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+.fw-600 {
+  font-weight: var(--fw-600);
+}
+
+.pad-left {
+  padding-left: var(--pad-left);
+}
+
+.title-color {
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "text text"
+    ". image";
+  border: 1px transparent;
+  border-radius: 7px;
+  margin-bottom: 1.3rem;
+  box-shadow: 0px 5px 5px 5px #a3a5ae;
+}
+
+.card-title {
+  grid-area: title;
+  color: var(--clr-dark-blue);
+}
+.card-text {
+  grid-area: text;
+}
+.card-img {
+  grid-area: image;
+}
+
+.card-1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.card:nth-of-type(2) {
+  border-top: 3px solid var(--clr-cyan);
+}
+
+.card:nth-of-type(3) {
+  border-top: 3px solid var(--clr-red);
+}
+
+.card:nth-of-type(4) {
+  border-top: 3px solid var(--clr-orange);
+}
+
+.card:nth-of-type(5) {
+  border-top: 3px solid var(--clr-blue);
+  margin-bottom: 5rem;
+}
+
+.wrapper {
+  background: var(--clr-light-gray);
+  padding: 4rem 2rem;
+}
+
+attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 90rem) {
+  .wrapper {
+    display: flex;
+    border: 1px red solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    height: 15.625rem;
+    width: 21.875rem;
+  }
+}
